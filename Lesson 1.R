@@ -1,4 +1,4 @@
-# Key sources and acknowledgements:
++# Key sources and acknowledgements:
 # Nathaniel D. Phillips. (2018). YaRrr! The Pirate’s Guide to R.  https://bookdown.org/ndphillips/YaRrr/
 # Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for Data Science: Import, tidy, transform, visualize, and model data. O’Reilly. 
 # https://r4ds.hadley.nz
@@ -29,6 +29,7 @@ View(pirates)
 
 # What is the mean age?
 mean(pirates$age)
+age <- c(27, 24, 23, 63, 42, 47)
 
 # What was the tallest pirate?
 max(pirates$height)
@@ -205,7 +206,7 @@ e + f
 spocti.odmenu <- function(odmena_ukon, plny_ukon, pul_ukon){
   (plny_ukon * odmena_ukon) + 
     (pul_ukon * odmena_ukon) * 0.5 +
-    (300 * (plny_ukon + pul_ukon))
+    (450 * (plny_ukon + pul_ukon))
 }
 
 spocti.odmenu(odmena_ukon = 1500, plny_ukon = 6, pul_ukon = 2)
